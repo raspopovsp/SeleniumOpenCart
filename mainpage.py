@@ -11,7 +11,6 @@ def sleep_test_search_field(browser, values):
     driver = browser
     SearchField(driver).fill(values)
     SearchField(driver).click()
-    time.sleep(3)
     assert values in driver.current_url
 
 
