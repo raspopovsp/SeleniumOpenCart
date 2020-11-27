@@ -9,7 +9,15 @@ class BasePage:
     def __init__(self, driver):
         self.driver = driver
 
-    def navigate_to(self, url):
+    """ метод для просмотра аттрибутов элемента """
+    @staticmethod
+    def get_element_attributes(element):
+        attrs = []
+        for attr in element.get_property('attributes'):
+            attrs.append([attr['name'], attr['value']])
+        return attrs
+
+    def goto_url(self, url):
         return self.driver.get(url)
 
     def __element(self, selector: dict, index: int, link_text: str = None):
@@ -19,6 +27,9 @@ class BasePage:
             selector = selector['css']
         elif link_text:
             by = By.LINK_TEXT
+        elif 'tag' in selector.keys():
+            by = By.TAG_NAME
+            selector = selector['tag']
         return self.driver.find_elements(by, selector)[index]
 
     def _get_elements_list(self, selector: dict):
@@ -29,7 +40,9 @@ class BasePage:
         return self.driver.find_elements(by, selector)
 
     def _click(self, selector, index=0):
-        actions(self.driver).move_to_element(self.__element(selector, index)).click().perform()
+        #actions(self.driver).move_to_element(self.__element(selector, index)).click().perform()
+        element = self.__element(selector, index)
+        element.click()
 
     def _input(self, selector, value, index=0):
         element = self.__element(selector, index)
@@ -44,4 +57,3 @@ class BasePage:
 
     def _get_element_attribute(self, selector, attr, index=0):
         return self.__element(selector, index).get_attribute(attr)
-

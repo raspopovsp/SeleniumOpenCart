@@ -1,7 +1,4 @@
-
-
 class LoginPageLocators:
-
     login_url = 'http://localhost/admin/index.php'
     admin_path = '?route=common/login'
     admin_panel_path = '?route=common/dashboard'

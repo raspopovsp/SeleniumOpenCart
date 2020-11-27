@@ -1,0 +1,24 @@
+2020-11-27 18:08:02,190 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(10) - MAIN PAGE TESTS
+2020-11-27 18:08:05,519 - [INFO] - utilities.DriverEventListener - (DriverEventListener.py).after_navigate_to(11) - GO TO http://localhost/index.php
+2020-11-27 18:08:05,527 - [INFO] - utilities.DriverEventListener - (DriverEventListener.py).after_find(14) - element #top-links > ul > li.dropdown > a[title="My Account"] found
+2020-11-27 18:08:42,482 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(10) - MAIN PAGE TESTS
+2020-11-27 18:09:11,293 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(12) - MAIN PAGE TESTS
+2020-11-27 18:10:32,651 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(12) - MAIN PAGE TESTS
+2020-11-27 18:12:37,661 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(12) - MAIN PAGE TESTS
+2020-11-27 18:12:50,449 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(12) - MAIN PAGE TESTS
+2020-11-27 18:13:04,809 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(12) - MAIN PAGE TESTS
+2020-11-27 18:14:19,169 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(12) - MAIN PAGE TESTS
+2020-11-27 18:15:34,487 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(12) - MAIN PAGE TESTS
+2020-11-27 18:16:31,550 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(12) - MAIN PAGE TESTS
+2020-11-27 18:16:53,614 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(12) - MAIN PAGE TESTS
+2020-11-27 18:29:33,381 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(12) - MAIN PAGE TESTS
+2020-11-27 18:31:02,356 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(12) - MAIN PAGE TESTS
+2020-11-27 18:31:05,637 - [CRITICAL] - utilities.DriverEventListener - (MainPage.py).is_expanded(15) - test logger
+2020-11-27 18:31:05,637 - [ERROR] - mainpage - (mainpage.py).test_account_btn_click(112) - My account menu not expands
+NoneType: None
+2020-11-27 18:36:07,554 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(13) - MAIN PAGE TESTS
+2020-11-27 18:36:10,173 - [CRITICAL] - utilities.DriverEventListener - (MainPage.py).is_expanded(16) - test logger
+2020-11-27 18:36:10,173 - [ERROR] - mainpage - (mainpage.py).test_account_btn_click(113) - My account menu not expands
+NoneType: None
+2020-11-27 18:41:52,822 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(13) - MAIN PAGE TESTS
+2020-11-27 18:42:20,371 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(13) - MAIN PAGE TESTS
