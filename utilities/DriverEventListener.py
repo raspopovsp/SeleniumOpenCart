@@ -13,7 +13,8 @@ class CustomEventListener(AbstractEventListener):
     def after_find(self, by, value, driver):
         logger.info(f"element {value} found")
 
-    def after_click(self, element, driver):
+    # after_click выбрасывает ошибку StaleElement. Т.к. меню закрывается после нажатия
+    def before_click(self, element, driver):
         logger.info(f"{element.text} clicked")
 
     def on_exception(self, exception, driver):

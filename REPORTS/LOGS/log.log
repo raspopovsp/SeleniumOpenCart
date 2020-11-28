@@ -1,24 +1,95 @@
-2020-11-27 18:08:02,190 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(10) - MAIN PAGE TESTS
-2020-11-27 18:08:05,519 - [INFO] - utilities.DriverEventListener - (DriverEventListener.py).after_navigate_to(11) - GO TO http://localhost/index.php
-2020-11-27 18:08:05,527 - [INFO] - utilities.DriverEventListener - (DriverEventListener.py).after_find(14) - element #top-links > ul > li.dropdown > a[title="My Account"] found
-2020-11-27 18:08:42,482 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(10) - MAIN PAGE TESTS
-2020-11-27 18:09:11,293 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(12) - MAIN PAGE TESTS
-2020-11-27 18:10:32,651 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(12) - MAIN PAGE TESTS
-2020-11-27 18:12:37,661 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(12) - MAIN PAGE TESTS
-2020-11-27 18:12:50,449 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(12) - MAIN PAGE TESTS
-2020-11-27 18:13:04,809 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(12) - MAIN PAGE TESTS
-2020-11-27 18:14:19,169 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(12) - MAIN PAGE TESTS
-2020-11-27 18:15:34,487 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(12) - MAIN PAGE TESTS
-2020-11-27 18:16:31,550 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(12) - MAIN PAGE TESTS
-2020-11-27 18:16:53,614 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(12) - MAIN PAGE TESTS
-2020-11-27 18:29:33,381 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(12) - MAIN PAGE TESTS
-2020-11-27 18:31:02,356 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(12) - MAIN PAGE TESTS
-2020-11-27 18:31:05,637 - [CRITICAL] - utilities.DriverEventListener - (MainPage.py).is_expanded(15) - test logger
-2020-11-27 18:31:05,637 - [ERROR] - mainpage - (mainpage.py).test_account_btn_click(112) - My account menu not expands
+2020-11-28 00:19:02,628 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 00:19:02,632 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 00:19:05,322 - [ERROR] - mainpage - (mainpage.py).test_navigate_to_auth_page(129) - Menu elem doesn't exist<class 'selenium.common.exceptions.StaleElementReferenceException'>
+Traceback (most recent call last):
+  File "G:\Projects\SeleniumOpenCart\mainpage.py", line 125, in test_navigate_to_auth_page
+    MainPage(driver).login_link_click()
+  File "G:\Projects\SeleniumOpenCart\page_objects\main_page\MainPage.py", line 23, in login_link_click
+    self._click(login_link)
+  File "G:\Projects\SeleniumOpenCart\page_objects\BasePage.py", line 45, in _click
+    element.click()
+  File "g:\projects\seleniumopencart\venv\lib\site-packages\selenium\webdriver\support\event_firing_webdriver.py", line 226, in click
+    self._dispatch("click", (self._webelement, self._driver), "click", ())
+  File "g:\projects\seleniumopencart\venv\lib\site-packages\selenium\webdriver\support\event_firing_webdriver.py", line 295, in _dispatch
+    getattr(self._listener, "after_%s" % l_call)(*l_args)
+  File "G:\Projects\SeleniumOpenCart\utilities\DriverEventListener.py", line 17, in after_click
+    logger.info(f"{element.text} clicked")
+  File "g:\projects\seleniumopencart\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 76, in text
+    return self._execute(Command.GET_ELEMENT_TEXT)['value']
+  File "g:\projects\seleniumopencart\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "g:\projects\seleniumopencart\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "g:\projects\seleniumopencart\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=87.0.4280.66)
+
+2020-11-28 00:20:21,447 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 00:20:21,451 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 00:40:14,876 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 00:40:14,880 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 00:41:40,198 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 00:41:40,203 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 00:53:59,594 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 00:53:59,598 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 00:54:37,393 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 00:54:37,397 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 00:56:36,069 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 00:56:36,074 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 00:56:38,816 - [ERROR] - mainpage - (mainpage.py).test_user_login(147) - USER LOGIN DECLINE
 NoneType: None
-2020-11-27 18:36:07,554 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(13) - MAIN PAGE TESTS
-2020-11-27 18:36:10,173 - [CRITICAL] - utilities.DriverEventListener - (MainPage.py).is_expanded(16) - test logger
-2020-11-27 18:36:10,173 - [ERROR] - mainpage - (mainpage.py).test_account_btn_click(113) - My account menu not expands
+2020-11-28 00:57:18,003 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 00:57:18,008 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 00:57:20,725 - [ERROR] - mainpage - (mainpage.py).test_user_login(148) - USER LOGIN DECLINE
 NoneType: None
-2020-11-27 18:41:52,822 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(13) - MAIN PAGE TESTS
-2020-11-27 18:42:20,371 - [WARNING] - mainpage - (mainpage.py).test_mainpage_start(13) - MAIN PAGE TESTS
+2020-11-28 00:58:09,340 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 00:58:09,343 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 00:58:12,311 - [ERROR] - mainpage - (mainpage.py).test_user_login(149) - USER LOGIN DECLINE
+NoneType: None
+2020-11-28 00:59:56,346 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 00:59:56,351 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 01:00:28,890 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 01:00:28,895 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 01:00:48,881 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 01:00:48,885 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 01:01:47,381 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 01:01:47,386 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 01:03:19,051 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 01:03:19,055 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 01:03:45,080 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 01:03:45,085 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 01:05:31,787 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 01:05:31,791 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 01:06:13,513 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 01:06:13,517 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 01:06:40,703 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 01:06:40,707 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 01:08:06,826 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 01:08:06,831 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 01:08:30,255 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 01:08:30,260 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 01:11:27,979 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 01:11:27,983 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 01:11:31,042 - [WARNING] - mainpage - (mainpage.py).test_user_login(143) - USER LOGIN SUCCESSFUL
+2020-11-28 12:16:16,410 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 12:16:16,414 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 12:16:19,904 - [WARNING] - mainpage - (mainpage.py).test_user_login(143) - USER LOGIN SUCCESSFUL
+2020-11-28 12:16:37,169 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 12:16:37,173 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 12:16:40,647 - [WARNING] - mainpage - (mainpage.py).test_user_login(143) - USER LOGIN SUCCESSFUL
+2020-11-28 12:32:17,661 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 12:32:17,666 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 12:32:34,274 - [WARNING] - mainpage - (mainpage.py).test_user_login(145) - USER LOGIN SUCCESSFUL
+2020-11-28 13:27:09,349 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 13:27:09,354 - [ERROR] - mainpage - (mainpage.py).test_mainpage_url(19) - URL = http://localhost/
+2020-11-28 13:27:12,982 - [WARNING] - mainpage - (mainpage.py).test_user_login(145) - USER LOGIN SUCCESSFUL
+2020-11-28 13:27:41,385 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 13:27:41,390 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 13:27:44,838 - [WARNING] - mainpage - (mainpage.py).test_user_login(145) - USER LOGIN SUCCESSFUL
+2020-11-28 13:29:48,539 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 13:29:48,543 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 13:29:52,365 - [WARNING] - mainpage - (mainpage.py).test_user_login(145) - USER LOGIN SUCCESSFUL
+2020-11-28 13:36:31,351 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 13:36:31,356 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 13:37:26,651 - [WARNING] - mainpage - (mainpage.py).test_user_login(145) - USER LOGIN SUCCESSFUL

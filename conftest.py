@@ -7,8 +7,8 @@ from utilities.DriverEventListener import CustomEventListener
 
 
 def pytest_addoption(parser):
-    parser.addoption("--browser", "-B", action="store", default="chrome", help="choose your browser")
-    parser.addoption("--url", "-U", action="store", default="http://localhost/index.php", help="choose your browser")
+    parser.addoption("--browser", "-B", action="store", default="chrome", help="browser choice")
+    parser.addoption("--url", "-U", action="store", default="http://localhost/index.php", help="url basic")
 
 
 @pytest.fixture
@@ -17,13 +17,13 @@ def browser(request):
     if browser_param == "chrome":
         options = Options()
         # options.add_argument("--headless")
-        options.add_argument("--kiosk")
+        # options.add_argument("--kiosk")
         driver = webdriver.Chrome(options=options)
         ef_driver = EventFiringWebDriver(driver, CustomEventListener())
     elif browser_param == "firefox":
         driver = webdriver.Firefox()
         ef_driver = EventFiringWebDriver(driver, CustomEventListener())
-        ef_driver.maximize_window()
+        # ef_driver.maximize_window()
     else:
         raise Exception(f"{request.param} is not supported!")
 
