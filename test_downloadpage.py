@@ -1,59 +1,43 @@
 import os
+import random
+import re
 import time
-
 import autoit
-from selenium.webdriver import ActionChains
+
+from selenium.common.exceptions import NoSuchElementException
 from page_objects.admin import AuthPage, DashboardPage
 from page_objects.admin.catalog import DownloadsPage
 
-# def sleep_test_download_page_url(browser):
-#     driver = browser
-#     AuthPage(driver).login(username='admin', password='admin')
-#     menu_catalog = DashboardPage(driver).get_menu_item(menu_option="Catalog")
-#     menu_catalog.click()
-#     submenu = DashboardPage(driver).get_submenu_item(menu_catalog, submenu_option="Downloads")
-#     WebDriverWait(driver, 3).until(EC.visibility_of(submenu))
-#     submenu.click()
-#     assert "catalog/download" in driver.current_url
-
+from utilities.db_connection import connect, delete_row
 
 """ Загрузка нового файла """
-
-
-def sleep_test_new_item_download(browser):
+def test_new_download(browser):
     driver = browser
 
-    download_file_name = "1Test name"
+    download_name = "1Test name"
+    # Количесто записей в таблице. Можно и без базы строки парсить.
+    db_items_default = len(connect("SELECT * FROM oc_download"))
 
     AuthPage(driver).login(username='admin', password='admin')
-
     menu_catalog = DashboardPage(driver).get_menu_item(menu_option="Catalog")
     menu_catalog.click()
-
     catalog_id = driver.find_element_by_id("collapse1")
-
     while True:
         if catalog_id.get_attribute("class") != "collapse in":
             continue
         else:
             break
-
     submenu_item = DashboardPage(driver).get_submenu_item(menu_catalog, submenu_option="Downloads")
     submenu_item.click()  # TODO Вынести переход до нужной страницы в Base.
-
     DownloadsPage(driver).goto_new_download_page()
-
-    print(f'Download page {driver.current_window_handle}')
-
-    download_name_input = DownloadsPage(driver).get_name_input()
-    ActionChains(driver).move_to_element(download_name_input).click().send_keys(download_file_name).perform()
-
+    DownloadsPage(driver).name_input_fill(download_name)
+    # ActionChains(driver).move_to_element(download_name_input).click().send_keys(download_file_name).perform()
     DownloadsPage(driver).upload_btn_click()
-
     """ 
-    Тудусик: уйти от autoit потому что на линуксе не заработает.
+    Тудусик: уйти от autoit потому что на линуксе и headless не заработает.
     С другой стороны похер, ибо задолбал кастомный инпут 
     """
+    time.sleep(1)
     autoit.win_activate("Открытие")
     autoit.control_focus("Открытие", "Edit1")
     autoit.control_set_text("Открытие", "Edit1",
@@ -61,24 +45,23 @@ def sleep_test_new_item_download(browser):
     time.sleep(1)
     autoit.control_click("Открытие", "Button1")
     time.sleep(1)
-
     driver.switch_to.alert.accept()
-
-    # filename_input = DownloadsPage(driver).get_filename_input()
-    # ActionChains(driver).move_to_element(filename_input).click().send_keys("Test filename").perform()
-
-    # mask_input = DownloadsPage(driver).get_mask_input()
-    # ActionChains(driver).move_to_element(mask_input).click().send_keys("Test mask").perform()
-
     DownloadsPage(driver).save_btn_click()
-    time.sleep(2)
+    db_items_new = len(connect("SELECT * FROM oc_download"))
 
-    downloaded_element_name = DownloadsPage(driver).get_downloads_list_element_text()
-    assert download_file_name == downloaded_element_name
+    # Удаление созданной записи из таблицы
+    last_item_id = connect(
+        "SELECT download_id FROM oc_download WHERE download_id=(SELECT max(download_id) FROM oc_download)")
+    parsed_id = re.findall("\\d+", str(last_item_id))
+    row = ("DELETE FROM oc_download WHERE download_id=%s" % parsed_id[0])
+    delete_row(row)
+    row_desc = "DELETE FROM oc_download_description WHERE download_id=%s" % parsed_id[0]
+    delete_row(row_desc)
+    assert db_items_default + 1 == db_items_new
 
 
-def sleep_test_edit_downloaded_file(browser):
-    new_name = "New download name"
+def test_edit_downloaded(browser):
+    new_name = f"New download name{random.randint(0, 100)} "
 
     driver = browser
     AuthPage(driver).login(username='admin', password='admin')
@@ -92,20 +75,22 @@ def sleep_test_edit_downloaded_file(browser):
             break
     submenu_item = DashboardPage(driver).get_submenu_item(menu_catalog, submenu_option="Downloads")
     submenu_item.click()
-    edited_element = DownloadsPage(driver).get_downloads_list_element_text()
-    DownloadsPage(driver).edit_btn_click()
-    download_name = DownloadsPage(driver).get_download_name_input_value()
-    if edited_element == download_name:
-        DownloadsPage(driver).download_name_input_change(value=new_name)
-    else:
-        print("Имена файлов не совпадают")
-    DownloadsPage(driver).save_btn_click()
-    downloaded_element_name = DownloadsPage(driver).get_downloads_list_element_text()
-    time.sleep(1)
-    assert new_name == downloaded_element_name
+    driver.save_screenshot("G:\Projects\SeleniumOpenCart\REPORTS\SCREENSHOTS\Downloadpage\EditItem.png")
+    try:
+        DownloadsPage(driver).edit_btn_click()
+        DownloadsPage(driver).change_name(value=new_name)
+        DownloadsPage(driver).save_btn_click()
+        driver.save_screenshot("G:\Projects\SeleniumOpenCart\REPORTS\SCREENSHOTS\Downloadpage\EditedItem.png")
+        time.sleep(1)
+        if DownloadsPage(driver).get_alert_text() == "Success: You have modified downloads!":
+            assert True
+        else:
+            assert False
+    except NoSuchElementException:
+        print(NoSuchElementException)
 
 
-def sleep_test_delete_downloaded_file(browser):
+def test_delete_download(browser):
     driver = browser
     AuthPage(driver).login(username='admin', password='admin')
     menu_catalog = DashboardPage(driver).get_menu_item(menu_option="Catalog")
@@ -128,9 +113,9 @@ def sleep_test_delete_downloaded_file(browser):
     if is_checked:
         DownloadsPage(driver).click_del_btn()
     else:
-        print("Nothing chosen")
+        raise Exception("Nothing chosen")
     time.sleep(2)
     driver.switch_to.alert.accept()
     new_count = DownloadsPage(driver).get_downloaded_elements()
     print(new_count)
-    assert default_count - 1 == new_count
+    assert (default_count - 1) == new_count

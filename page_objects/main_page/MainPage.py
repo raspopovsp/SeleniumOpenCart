@@ -15,7 +15,6 @@ login_btn = {'css': '#content > div > div:nth-child(2) > div > form > .btn-prima
 
 class MainPage(BasePage):
 
-
     def goto_user_login(self, url):
         self.driver.get(url)
 
@@ -31,10 +30,10 @@ class MainPage(BasePage):
     def login_link_click(self):
         self._click(login_link)
 
-    def input_email(self, email):
+    def login(self, email):
         self._input(user_email, email)
 
-    def input_pwd(self, pwd):
+    def passwd(self, pwd):
         self._input(user_pwd, pwd)
 
     def login_btn_click(self):

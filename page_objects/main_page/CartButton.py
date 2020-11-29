@@ -38,5 +38,5 @@ class CartButton(BasePage):
         else:
             return False
 
-    def get_cart_dropdown_text(self):
+    def get_text(self):
         return self._get_element_text(cart_dropdown_menu)

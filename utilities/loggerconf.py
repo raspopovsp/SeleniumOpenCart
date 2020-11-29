@@ -1,31 +1,23 @@
+import inspect
 import logging
+from pathlib import Path
 
-log_format = f"%(asctime)s - [%(levelname)s] - %(name)s - (%(filename)s).%(funcName)s(%(lineno)d) - %(message)s"
+def loggen(log_level=logging.DEBUG):
+    # gets the name of the class or method from where this method is called
+    logger_name = inspect.stack()[1][3]
+    logger = logging.getLogger(logger_name)
 
+    # By default, log all events
+    logger.setLevel(logging.DEBUG)
 
-class LogGen:
+    Path("./REPORTS/LOGS").mkdir(parents=True, exist_ok=True)
+    logger_name = f"./REPORTS/LOGS/{logger_name.lower()}.log"
+    file_handler = logging.FileHandler(logger_name.lower(), mode="a+")
+    file_handler.setLevel(log_level)
 
-    @staticmethod
-    def get_file_handler():
-        file_handler = logging.FileHandler("./REPORTS/LOGS/log.log")
-        file_handler.setLevel(logging.WARN)
-        file_handler.setFormatter(logging.Formatter(log_format))
-        return file_handler
+    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s: %(message)s',
+                                  datefmt='%m/%d/%Y %I:%M:%S %p')
+    file_handler.setFormatter(formatter)
+    logger.addHandler(file_handler)
 
-    @staticmethod
-    def get_stream_handler():
-        stream_handler = logging.StreamHandler()
-        stream_handler.setLevel(logging.INFO)
-        stream_handler.setFormatter(logging.Formatter(log_format))
-        return stream_handler
-
-    @staticmethod
-    def loggen(name):
-        logger = logging.getLogger(name)
-        logger.setLevel(logging.INFO)
-        fh = LogGen.get_file_handler()
-        sh = LogGen.get_stream_handler()
-        logger.addHandler(fh)
-        logger.addHandler(sh)
-
-        return logger
+    return logger

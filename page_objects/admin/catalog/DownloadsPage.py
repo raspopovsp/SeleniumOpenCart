@@ -1,5 +1,3 @@
-import os
-
 from page_objects.BasePage import BasePage
 
 download_files_table_element = {'css': 'tbody > tr > .text-left'}
@@ -16,6 +14,11 @@ upload_new_btn = {'css': '#button-upload'}
 
 download_list = {'css': '#form-download > div > table > tbody > tr'}
 
+name_input = {'css': "#form-download > div:nth-child(1) > div > div > input"}
+
+alert_success = {'css': '#content > .container-fluid > div.alert.alert-success.alert-dismissible'}
+
+
 class DownloadsPage(BasePage):
     def goto_new_download_page(self):
         self._click(add_new_btn)
@@ -23,8 +26,14 @@ class DownloadsPage(BasePage):
     def _get_form_inputs(self):
         return self._get_elements_list(form_inputs)
 
+    def get_alert_text(self):
+        return self._get_element_text(alert_success)
+
     def get_name_input(self):
         return self._get_form_inputs()[0]
+
+    def name_input_fill(self, value):
+        return self._input(name_input, value)
 
     def get_filename_input(self):
         return self._get_form_inputs()[1]
@@ -32,10 +41,10 @@ class DownloadsPage(BasePage):
     def get_mask_input(self):
         return self._get_form_inputs()[2]
 
-    def get_downloads_list_element_text(self):
+    def get_table_element_text(self):
         return self._get_element_text(download_files_table_element)
 
-    def get_download_name_input_value(self):
+    def get_name_input_value(self):
         name_input = self.get_name_input()
         value = name_input.find_element_by_css_selector(".input-group > input.form-control")\
             .get_attribute('value')
@@ -50,7 +59,7 @@ class DownloadsPage(BasePage):
     def edit_btn_click(self):
         self._click(edit_btn)
 
-    def download_name_input_change(self, value):
+    def change_name(self, value):
         input_el = self.driver.find_element_by_css_selector("#form-download > div:nth-child(1) > div > div > input")
         input_el.clear()
         input_el.send_keys(value)

@@ -93,3 +93,70 @@ NoneType: None
 2020-11-28 13:36:31,351 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
 2020-11-28 13:36:31,356 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
 2020-11-28 13:37:26,651 - [WARNING] - mainpage - (mainpage.py).test_user_login(145) - USER LOGIN SUCCESSFUL
+2020-11-28 14:48:04,421 - [WARNING] - mainpage - (mainpage.py).test_user_login(155) - USER LOGIN SUCCESSFUL
+2020-11-28 14:53:27,418 - [WARNING] - mainpage - (mainpage.py).test_user_login(155) - USER LOGIN SUCCESSFUL
+2020-11-28 14:53:45,934 - [WARNING] - mainpage - (mainpage.py).test_user_login(155) - USER LOGIN SUCCESSFUL
+2020-11-28 14:56:34,129 - [WARNING] - mainpage - (mainpage.py).test_user_login(155) - USER LOGIN SUCCESSFUL
+2020-11-28 17:48:35,550 - [WARNING] - mainpage - (mainpage.py).test_user_login(155) - USER LOGIN SUCCESSFUL
+2020-11-28 17:51:54,708 - [WARNING] - mainpage - (mainpage.py).test_user_login(155) - USER LOGIN SUCCESSFUL
+2020-11-28 17:55:36,543 - [WARNING] - mainpage - (mainpage.py).test_user_login(155) - USER LOGIN SUCCESSFUL
+2020-11-28 17:59:31,476 - [WARNING] - mainpage - (mainpage.py).test_user_login(155) - USER LOGIN SUCCESSFUL
+2020-11-28 18:00:59,404 - [WARNING] - mainpage - (mainpage.py).test_user_login(155) - USER LOGIN SUCCESSFUL
+2020-11-28 18:04:17,297 - [WARNING] - mainpage - (mainpage.py).test_user_login(155) - USER LOGIN SUCCESSFUL
+2020-11-28 18:05:10,101 - [WARNING] - mainpage - (mainpage.py).test_user_login(155) - USER LOGIN SUCCESSFUL
+2020-11-28 18:06:05,972 - [WARNING] - mainpage - (mainpage.py).test_user_login(155) - USER LOGIN SUCCESSFUL
+2020-11-28 18:09:49,698 - [WARNING] - mainpage - (mainpage.py).test_user_login(155) - USER LOGIN SUCCESSFUL
+2020-11-28 18:11:34,560 - [WARNING] - mainpage - (mainpage.py).test_user_login(155) - USER LOGIN SUCCESSFUL
+2020-11-28 18:18:02,755 - [WARNING] - mainpage - (mainpage.py).test_user_login(155) - USER LOGIN SUCCESSFUL
+2020-11-28 18:55:47,158 - [WARNING] - mainpage - (mainpage.py).test_user_login(155) - USER LOGIN SUCCESSFUL
+2020-11-28 19:38:17,872 - [WARNING] - mainpage - (mainpage.py).test_user_login(155) - USER LOGIN SUCCESSFUL
+2020-11-28 19:42:21,338 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 19:42:21,342 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 19:43:14,402 - [WARNING] - mainpage - (mainpage.py).test_user_login(155) - USER LOGIN SUCCESSFUL
+2020-11-28 19:44:02,555 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 19:44:02,559 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 19:49:01,905 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 19:49:01,909 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 19:50:17,719 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 19:50:17,723 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 19:52:03,202 - [WARNING] - mainpage - (mainpage.py).test_user_login(155) - USER LOGIN SUCCESSFUL
+2020-11-28 20:17:51,194 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 20:17:51,198 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 20:18:47,252 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 20:18:47,256 - [WARNING] - mainpage - (mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 20:19:38,980 - [WARNING] - mainpage - (mainpage.py).test_user_login(155) - USER LOGIN SUCCESSFUL
+2020-11-28 20:25:51,712 - [WARNING] - test_loginpage - (test_loginpage.py).test_login_page_init(8) - TEST FOR LOGIN PAGE INITIATED
+2020-11-28 20:26:58,055 - [WARNING] - test_mainpage - (test_mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 20:26:58,060 - [WARNING] - test_mainpage - (test_mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 20:27:49,037 - [WARNING] - test_mainpage - (test_mainpage.py).test_user_login(155) - USER LOGIN SUCCESSFUL
+2020-11-28 20:38:46,084 - [WARNING] - test_downloadpage - (test_downloadpage.py).test_new_item_download(32) - downloadpage auth success
+2020-11-28 20:41:02,272 - [WARNING] - test_downloadpage - (test_downloadpage.py).test_new_item_download(32) - downloadpage auth success
+2020-11-28 20:41:51,074 - [WARNING] - test_downloadpage - (test_downloadpage.py).test_new_item_download(32) - downloadpage auth success
+2020-11-28 20:54:31,085 - [WARNING] - test_downloadpage - (test_downloadpage.py).test_new_item_download(33) - downloadpage auth success
+2020-11-28 20:56:20,154 - [WARNING] - test_downloadpage - (test_downloadpage.py).test_new_item_download(31) - downloadpage auth success
+2020-11-28 20:56:50,905 - [WARNING] - test_downloadpage - (test_downloadpage.py).test_new_item_download(31) - downloadpage auth success
+2020-11-28 20:57:22,253 - [WARNING] - test_downloadpage - (test_downloadpage.py).test_new_item_download(31) - downloadpage auth success
+2020-11-28 20:57:48,928 - [WARNING] - test_downloadpage - (test_downloadpage.py).test_new_item_download(31) - downloadpage auth success
+2020-11-28 21:01:04,819 - [WARNING] - test_downloadpage - (test_downloadpage.py).test_new_item_download(31) - downloadpage auth success
+2020-11-28 21:03:47,042 - [WARNING] - test_downloadpage - (test_downloadpage.py).test_new_item_download(31) - downloadpage auth success
+2020-11-28 21:04:52,876 - [WARNING] - test_downloadpage - (test_downloadpage.py).test_new_item_download(31) - downloadpage auth success
+2020-11-28 21:05:36,568 - [WARNING] - test_downloadpage - (test_downloadpage.py).test_new_item_download(31) - downloadpage auth success
+2020-11-28 21:06:12,103 - [WARNING] - test_downloadpage - (test_downloadpage.py).test_new_item_download(31) - downloadpage auth success
+2020-11-28 21:06:25,572 - [WARNING] - test_downloadpage - (test_downloadpage.py).test_new_item_download(31) - downloadpage auth success
+2020-11-28 21:07:07,235 - [WARNING] - test_downloadpage - (test_downloadpage.py).test_new_item_download(31) - downloadpage auth success
+2020-11-28 21:08:34,867 - [WARNING] - test_downloadpage - (test_downloadpage.py).test_new_item_download(31) - downloadpage auth success
+2020-11-28 22:12:21,538 - [WARNING] - test_downloadpage - (test_downloadpage.py).test_new_item_download(34) - downloadpage auth success
+2020-11-28 22:12:44,167 - [WARNING] - test_loginpage - (test_loginpage.py).test_login_page_init(8) - TEST FOR LOGIN PAGE INITIATED
+2020-11-28 22:13:50,574 - [WARNING] - test_mainpage - (test_mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 22:13:50,578 - [WARNING] - test_mainpage - (test_mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 22:14:46,959 - [WARNING] - test_mainpage - (test_mainpage.py).test_user_login(155) - USER LOGIN SUCCESSFUL
+2020-11-28 22:20:00,013 - [WARNING] - test_downloadpage - (test_downloadpage.py).test_new_item_download(34) - downloadpage auth success
+2020-11-28 22:20:22,322 - [WARNING] - test_loginpage - (test_loginpage.py).test_login_page_init(8) - TEST FOR LOGIN PAGE INITIATED
+2020-11-28 22:21:03,298 - [WARNING] - test_mainpage - (test_mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 22:21:03,303 - [WARNING] - test_mainpage - (test_mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 22:22:09,875 - [WARNING] - test_mainpage - (test_mainpage.py).test_user_login(155) - USER LOGIN SUCCESSFUL
+2020-11-28 22:28:29,549 - [WARNING] - test_downloadpage - (test_downloadpage.py).test_new_item_download(34) - downloadpage auth success
+2020-11-28 22:28:49,919 - [WARNING] - test_loginpage - (test_loginpage.py).test_login_page_init(8) - TEST FOR LOGIN PAGE INITIATED
+2020-11-28 22:29:31,806 - [WARNING] - test_mainpage - (test_mainpage.py).test_mainpage_url(14) - =============MAIN PAGE TEST START===============
+2020-11-28 22:29:31,810 - [WARNING] - test_mainpage - (test_mainpage.py).test_mainpage_url(16) - URL = http://localhost/index.php
+2020-11-28 22:30:28,545 - [WARNING] - test_mainpage - (test_mainpage.py).test_user_login(155) - USER LOGIN SUCCESSFUL
