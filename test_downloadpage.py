@@ -60,7 +60,7 @@ def test_new_download(browser):
     assert db_items_default + 1 == db_items_new
 
 
-def test_edit_downloaded(browser):
+def test_edit_download(browser):
     new_name = f"New download name{random.randint(0, 100)} "
     driver = browser
     AuthPage(driver).login(username='admin', password='admin')
@@ -81,7 +81,7 @@ def test_edit_downloaded(browser):
         DownloadsPage(driver).save_btn_click()
         driver.save_screenshot("G:\Projects\SeleniumOpenCart\REPORTS\SCREENSHOTS\Downloadpage\EditedItem.png")
         time.sleep(1)
-        if DownloadsPage(driver).get_alert_text() == "Success: You have modified downloads!":
+        if "Success: You have modified downloads!" in DownloadsPage(driver).get_alert_text():
             assert True
         else:
             assert False
@@ -91,6 +91,7 @@ def test_edit_downloaded(browser):
 
 def test_delete_download(browser):
     driver = browser
+    """ Создание новой записи в базе данных """
     DownloadsPage._create_new_download()
 
     AuthPage(driver).login(username='admin', password='admin')

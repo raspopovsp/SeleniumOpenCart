@@ -18,7 +18,6 @@ upload_new_btn = {'css': '#button-upload'}
 download_list = {'css': '#form-download > div > table > tbody > tr'}
 
 name_input = {'css': "#form-download > div:nth-child(1) > div > div > input"}
-
 alert_success = {'css': '#content > .container-fluid > div.alert.alert-success.alert-dismissible'}
 
 
@@ -75,9 +74,7 @@ class DownloadsPage(BasePage):
         self._click(edit_btn)
 
     def change_name(self, value):
-        input_el = self.driver.find_element_by_css_selector("#form-download > div:nth-child(1) > div > div > input")
-        input_el.clear()
-        input_el.send_keys(value)
+        return self._input(name_input, value)
 
     def get_downloaded_elements(self):
         rows = []
