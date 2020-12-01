@@ -1,4 +1,7 @@
+import re
+
 from page_objects.BasePage import BasePage
+from utilities.db_connection import connect, delete_row, insert_row
 
 download_files_table_element = {'css': 'tbody > tr > .text-left'}
 edit_btn = {'css': 'tbody > tr > td > a.btn-primary'}
@@ -20,6 +23,18 @@ alert_success = {'css': '#content > .container-fluid > div.alert.alert-success.a
 
 
 class DownloadsPage(BasePage):
+    @staticmethod
+    def _create_new_download():
+        insert_row(
+            "INSERT INTO oc_download(download_id, filename, mask, date_added) VALUES (DEFAULT, 'NewFileName', 'MaskDB', CURRENT_TIMESTAMP())")
+        new_download_id = connect(
+            "SELECT download_id FROM oc_download WHERE download_id=(SELECT max(download_id) FROM oc_download)")
+        new_download_id_parsed = re.findall("\\d+", str(new_download_id))
+        complete_req = "INSERT INTO oc_download_description(download_id, language_id, name) VALUES (%s, %s, '%s')" % (
+            *new_download_id_parsed, 1, '11FromDB')
+        print(complete_req)
+        insert_row(complete_req)
+
     def goto_new_download_page(self):
         self._click(add_new_btn)
 
@@ -46,7 +61,7 @@ class DownloadsPage(BasePage):
 
     def get_name_input_value(self):
         name_input = self.get_name_input()
-        value = name_input.find_element_by_css_selector(".input-group > input.form-control")\
+        value = name_input.find_element_by_css_selector(".input-group > input.form-control") \
             .get_attribute('value')
         return value
 
