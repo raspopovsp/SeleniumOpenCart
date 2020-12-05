@@ -24,7 +24,7 @@ class BasePage:
             attrs.append([attr['name'], attr['value']])
         return attrs
 
-    def goto(self, url):
+    def _goto(self, url):
         return self.driver.get(url)
 
     def _element(self, selector: dict, index: int, link_text: str = None):

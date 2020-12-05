@@ -2,9 +2,11 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
+
 def pytest_addoption(parser):
     parser.addoption("--browser", "-B", action="store", default="chrome", help="browser choice")
     parser.addoption("--url", "-U", action="store", default="http://localhost/index.php", help="url basic")
+
 
 @pytest.fixture
 def browser(request):
@@ -13,7 +15,6 @@ def browser(request):
         options = Options()
         # options.add_argument("--headless")
         # options.add_argument("--kiosk")
-        # options.add_argument(f"--proxy-server{client.proxy}")
         driver = webdriver.Chrome(options=options)
     elif browser_param == "firefox":
         capabilities = webdriver.DesiredCapabilities().FIREFOX

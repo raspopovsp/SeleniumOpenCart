@@ -1618,3 +1618,236 @@
 12/01/2020 10:12:09 PM - BasePage - INFO: Element with locator: button[data-original-title="Save"] found
 12/01/2020 10:12:09 PM - BasePage - INFO: Element with locator: {'tag': 'button[data-original-title="Save"]'} clicked
 12/01/2020 10:12:10 PM - BasePage - INFO: Element with locator: #content > .container-fluid > div.alert.alert-success.alert-dismissible found
+12/02/2020 04:54:40 PM - BasePage - INFO: Element with locator: #form-currency found
+12/02/2020 04:54:40 PM - BasePage - INFO: Element with locator: #form-currency found
+12/02/2020 04:54:40 PM - BasePage - INFO: Element with locator: {'css': '#form-currency'} clicked
+12/02/2020 04:54:40 PM - BasePage - INFO: Elements with locator: #form-currency > div > ul.dropdown-menu found
+12/02/2020 04:54:40 PM - BasePage - INFO: Element with locator: #form-currency found
+12/02/2020 05:09:28 PM - BasePage - INFO: Element with locator: input.input-lg found
+12/02/2020 05:09:28 PM - BasePage - INFO: Element with locator: {'css': 'input.input-lg'} clicked
+12/02/2020 05:09:28 PM - BasePage - INFO: Input with locator: {'css': 'input.input-lg'} found
+12/02/2020 05:09:28 PM - BasePage - INFO: Element with locator: input.input-lg found
+12/02/2020 05:09:28 PM - BasePage - INFO: Element with locator: button.btn-default.btn-lg found
+12/02/2020 05:09:29 PM - BasePage - INFO: Element with locator: {'css': 'button.btn-default.btn-lg'} clicked
+12/02/2020 05:09:35 PM - BasePage - INFO: Element with locator: input.input-lg found
+12/02/2020 05:09:35 PM - BasePage - INFO: Element with locator: {'css': 'input.input-lg'} clicked
+12/02/2020 05:09:35 PM - BasePage - INFO: Input with locator: {'css': 'input.input-lg'} found
+12/02/2020 05:09:35 PM - BasePage - INFO: Element with locator: input.input-lg found
+12/02/2020 05:09:35 PM - BasePage - INFO: Element with locator: button.btn-default.btn-lg found
+12/02/2020 05:09:35 PM - BasePage - INFO: Element with locator: {'css': 'button.btn-default.btn-lg'} clicked
+12/02/2020 05:09:37 PM - BasePage - INFO: Element with locator: input.input-lg found
+12/02/2020 05:09:37 PM - BasePage - INFO: Element with locator: {'css': 'input.input-lg'} clicked
+12/02/2020 05:09:37 PM - BasePage - INFO: Input with locator: {'css': 'input.input-lg'} found
+12/02/2020 05:09:37 PM - BasePage - INFO: Element with locator: input.input-lg found
+12/02/2020 05:09:37 PM - BasePage - INFO: Element with locator: button.btn-default.btn-lg found
+12/02/2020 05:09:38 PM - BasePage - INFO: Element with locator: {'css': 'button.btn-default.btn-lg'} clicked
+12/02/2020 05:09:40 PM - BasePage - INFO: Element with locator: #cart-total found
+12/02/2020 05:09:50 PM - BasePage - INFO: Element with locator: #cart found
+12/02/2020 05:09:50 PM - BasePage - INFO: Element with attr is btn-group btn-block found
+12/02/2020 05:09:54 PM - BasePage - INFO: Element with locator: #cart found
+12/02/2020 05:09:54 PM - BasePage - INFO: Element with locator: {'css': '#cart'} clicked
+12/02/2020 05:09:54 PM - BasePage - INFO: Element with locator: #cart found
+12/02/2020 05:09:54 PM - BasePage - INFO: Element with attr is btn-group btn-block open found
+12/02/2020 05:09:56 PM - BasePage - INFO: Element with locator: #form-currency > .btn-group found
+12/02/2020 05:09:56 PM - BasePage - INFO: Element with attr is btn-group found
+12/02/2020 05:10:03 PM - BasePage - INFO: Element with locator: #cart found
+12/02/2020 05:10:03 PM - BasePage - INFO: Element with attr is btn-group btn-block found
+12/02/2020 05:10:03 PM - BasePage - INFO: Element with locator: #cart found
+12/02/2020 05:10:03 PM - BasePage - INFO: Element with locator: {'css': '#cart'} clicked
+12/02/2020 05:10:03 PM - BasePage - INFO: Element with locator: #cart>ul.dropdown-menu found
+12/02/2020 05:10:07 PM - BasePage - INFO: Element with locator: #form-currency found
+12/02/2020 05:10:07 PM - BasePage - INFO: Element with locator: #cart-total found
+12/02/2020 05:10:07 PM - BasePage - INFO: Element with locator: #content .row .product-layout .caption .price found
+12/02/2020 05:10:10 PM - BasePage - INFO: Element with locator: #form-currency found
+12/02/2020 05:10:10 PM - BasePage - INFO: Element with locator: #form-currency found
+12/02/2020 05:10:10 PM - BasePage - INFO: Element with locator: {'css': '#form-currency'} clicked
+12/02/2020 05:10:10 PM - BasePage - INFO: Elements with locator: #form-currency > div > ul.dropdown-menu found
+12/02/2020 05:10:11 PM - BasePage - INFO: Element with locator: #form-currency found
+12/02/2020 05:10:13 PM - BasePage - INFO: Element with locator: #top-links > ul > li.dropdown > a[title="My Account"] found
+12/02/2020 05:10:17 PM - BasePage - INFO: Element with locator: {'css': '#top-links > ul > li.dropdown > a[title="My Account"]'} clicked
+12/02/2020 05:10:17 PM - BasePage - INFO: Element with locator: #top-links > ul > li.dropdown.open > a found
+12/02/2020 05:10:17 PM - BasePage - INFO: Element with attr is true found
+12/02/2020 05:10:18 PM - BasePage - INFO: Element with locator: #top-links > ul > li.dropdown > a[title="My Account"] found
+12/02/2020 05:10:19 PM - BasePage - INFO: Element with locator: {'css': '#top-links > ul > li.dropdown > a[title="My Account"]'} clicked
+12/02/2020 05:10:19 PM - BasePage - INFO: Element with locator: #top-links > ul > li.dropdown.open > ul > li:nth-child(2) found
+12/02/2020 05:10:19 PM - BasePage - INFO: Element with locator: {'css': '#top-links > ul > li.dropdown.open > ul > li:nth-child(2)'} clicked
+12/02/2020 05:10:21 PM - BasePage - INFO: Input with locator: {'css': '#input-email'} found
+12/02/2020 05:10:21 PM - BasePage - INFO: Element with locator: #input-email found
+12/02/2020 05:10:21 PM - BasePage - INFO: Input with locator: {'css': '#input-password'} found
+12/02/2020 05:10:21 PM - BasePage - INFO: Element with locator: #input-password found
+12/02/2020 05:10:21 PM - BasePage - INFO: Element with locator: #content > div > div:nth-child(2) > div > form > .btn-primary found
+12/02/2020 05:10:22 PM - BasePage - INFO: Element with locator: {'css': '#content > div > div:nth-child(2) > div > form > .btn-primary'} clicked
+12/02/2020 06:18:22 PM - BasePage - INFO: Element with locator: input.input-lg found
+12/02/2020 06:18:22 PM - BasePage - INFO: Element with locator: {'css': 'input.input-lg'} clicked
+12/02/2020 06:18:22 PM - BasePage - INFO: Input with locator: {'css': 'input.input-lg'} found
+12/02/2020 06:18:22 PM - BasePage - INFO: Element with locator: input.input-lg found
+12/02/2020 06:18:22 PM - BasePage - INFO: Element with locator: button.btn-default.btn-lg found
+12/02/2020 06:18:22 PM - BasePage - INFO: Element with locator: {'css': 'button.btn-default.btn-lg'} clicked
+12/02/2020 06:18:26 PM - BasePage - INFO: Element with locator: input.input-lg found
+12/02/2020 06:18:26 PM - BasePage - INFO: Element with locator: {'css': 'input.input-lg'} clicked
+12/02/2020 06:18:26 PM - BasePage - INFO: Input with locator: {'css': 'input.input-lg'} found
+12/02/2020 06:18:26 PM - BasePage - INFO: Element with locator: input.input-lg found
+12/02/2020 06:18:26 PM - BasePage - INFO: Element with locator: button.btn-default.btn-lg found
+12/02/2020 06:18:26 PM - BasePage - INFO: Element with locator: {'css': 'button.btn-default.btn-lg'} clicked
+12/02/2020 06:18:30 PM - BasePage - INFO: Element with locator: input.input-lg found
+12/02/2020 06:18:30 PM - BasePage - INFO: Element with locator: {'css': 'input.input-lg'} clicked
+12/02/2020 06:18:30 PM - BasePage - INFO: Input with locator: {'css': 'input.input-lg'} found
+12/02/2020 06:18:30 PM - BasePage - INFO: Element with locator: input.input-lg found
+12/02/2020 06:18:30 PM - BasePage - INFO: Element with locator: button.btn-default.btn-lg found
+12/02/2020 06:18:30 PM - BasePage - INFO: Element with locator: {'css': 'button.btn-default.btn-lg'} clicked
+12/02/2020 06:18:32 PM - BasePage - INFO: Element with locator: #cart-total found
+12/02/2020 06:18:35 PM - BasePage - INFO: Element with locator: #cart found
+12/02/2020 06:18:35 PM - BasePage - INFO: Element with attr is btn-group btn-block found
+12/02/2020 06:18:41 PM - BasePage - INFO: Element with locator: #cart found
+12/02/2020 06:18:41 PM - BasePage - INFO: Element with locator: {'css': '#cart'} clicked
+12/02/2020 06:18:41 PM - BasePage - INFO: Element with locator: #cart found
+12/02/2020 06:18:41 PM - BasePage - INFO: Element with attr is btn-group btn-block open found
+12/02/2020 06:18:43 PM - BasePage - INFO: Element with locator: #cart found
+12/02/2020 06:18:43 PM - BasePage - INFO: Element with attr is btn-group btn-block found
+12/02/2020 06:18:43 PM - BasePage - INFO: Element with locator: #cart found
+12/02/2020 06:18:43 PM - BasePage - INFO: Element with locator: {'css': '#cart'} clicked
+12/02/2020 06:18:43 PM - BasePage - INFO: Element with locator: #cart>ul.dropdown-menu found
+12/02/2020 06:18:47 PM - BasePage - INFO: Element with locator: #form-currency found
+12/02/2020 06:18:47 PM - BasePage - INFO: Element with locator: #cart-total found
+12/02/2020 06:18:47 PM - BasePage - INFO: Element with locator: #content .row .product-layout .caption .price found
+12/02/2020 06:18:48 PM - BasePage - INFO: Element with locator: #form-currency > .btn-group found
+12/02/2020 06:18:53 PM - BasePage - INFO: Element with attr is btn-group found
+12/02/2020 06:18:56 PM - BasePage - INFO: Element with locator: #form-currency found
+12/02/2020 06:18:56 PM - BasePage - INFO: Element with locator: #form-currency found
+12/02/2020 06:18:56 PM - BasePage - INFO: Element with locator: {'css': '#form-currency'} clicked
+12/02/2020 06:18:56 PM - BasePage - INFO: Elements with locator: #form-currency > div > ul.dropdown-menu found
+12/02/2020 06:18:56 PM - BasePage - INFO: Element with locator: #form-currency found
+12/02/2020 06:19:00 PM - BasePage - INFO: Element with locator: #top-links > ul > li.dropdown > a[title="My Account"] found
+12/02/2020 06:19:00 PM - BasePage - INFO: Element with locator: {'css': '#top-links > ul > li.dropdown > a[title="My Account"]'} clicked
+12/02/2020 06:19:00 PM - BasePage - INFO: Element with locator: #top-links > ul > li.dropdown.open > a found
+12/02/2020 06:19:00 PM - BasePage - INFO: Element with attr is true found
+12/02/2020 06:19:04 PM - BasePage - INFO: Element with locator: #top-links > ul > li.dropdown > a[title="My Account"] found
+12/02/2020 06:19:04 PM - BasePage - INFO: Element with locator: {'css': '#top-links > ul > li.dropdown > a[title="My Account"]'} clicked
+12/02/2020 06:19:04 PM - BasePage - INFO: Element with locator: #top-links > ul > li.dropdown.open > ul > li:nth-child(2) found
+12/02/2020 06:19:04 PM - BasePage - INFO: Element with locator: {'css': '#top-links > ul > li.dropdown.open > ul > li:nth-child(2)'} clicked
+12/02/2020 06:19:10 PM - BasePage - INFO: Input with locator: {'css': '#input-email'} found
+12/02/2020 06:19:10 PM - BasePage - INFO: Element with locator: #input-email found
+12/02/2020 06:19:10 PM - BasePage - INFO: Input with locator: {'css': '#input-password'} found
+12/02/2020 06:19:10 PM - BasePage - INFO: Element with locator: #input-password found
+12/02/2020 06:19:10 PM - BasePage - INFO: Element with locator: #content > div > div:nth-child(2) > div > form > .btn-primary found
+12/02/2020 06:19:11 PM - BasePage - INFO: Element with locator: {'css': '#content > div > div:nth-child(2) > div > form > .btn-primary'} clicked
+12/02/2020 06:21:33 PM - BasePage - INFO: Element with locator: input.input-lg found
+12/02/2020 06:21:33 PM - BasePage - INFO: Element with locator: {'css': 'input.input-lg'} clicked
+12/02/2020 06:21:33 PM - BasePage - INFO: Input with locator: {'css': 'input.input-lg'} found
+12/02/2020 06:21:33 PM - BasePage - INFO: Element with locator: input.input-lg found
+12/02/2020 06:21:33 PM - BasePage - INFO: Element with locator: button.btn-default.btn-lg found
+12/02/2020 06:21:33 PM - BasePage - INFO: Element with locator: {'css': 'button.btn-default.btn-lg'} clicked
+12/02/2020 06:21:37 PM - BasePage - INFO: Element with locator: input.input-lg found
+12/02/2020 06:21:37 PM - BasePage - INFO: Element with locator: {'css': 'input.input-lg'} clicked
+12/02/2020 06:21:37 PM - BasePage - INFO: Input with locator: {'css': 'input.input-lg'} found
+12/02/2020 06:21:37 PM - BasePage - INFO: Element with locator: input.input-lg found
+12/02/2020 06:21:37 PM - BasePage - INFO: Element with locator: button.btn-default.btn-lg found
+12/02/2020 06:21:37 PM - BasePage - INFO: Element with locator: {'css': 'button.btn-default.btn-lg'} clicked
+12/02/2020 06:21:39 PM - BasePage - INFO: Element with locator: input.input-lg found
+12/02/2020 06:21:39 PM - BasePage - INFO: Element with locator: {'css': 'input.input-lg'} clicked
+12/02/2020 06:21:39 PM - BasePage - INFO: Input with locator: {'css': 'input.input-lg'} found
+12/02/2020 06:21:39 PM - BasePage - INFO: Element with locator: input.input-lg found
+12/02/2020 06:21:39 PM - BasePage - INFO: Element with locator: button.btn-default.btn-lg found
+12/02/2020 06:21:39 PM - BasePage - INFO: Element with locator: {'css': 'button.btn-default.btn-lg'} clicked
+12/02/2020 06:21:43 PM - BasePage - INFO: Element with locator: #cart-total found
+12/02/2020 06:21:53 PM - BasePage - INFO: Element with locator: #cart found
+12/02/2020 06:21:53 PM - BasePage - INFO: Element with attr is btn-group btn-block found
+12/02/2020 06:21:54 PM - BasePage - INFO: Element with locator: #cart found
+12/02/2020 06:21:54 PM - BasePage - INFO: Element with locator: {'css': '#cart'} clicked
+12/02/2020 06:21:54 PM - BasePage - INFO: Element with locator: #cart found
+12/02/2020 06:21:54 PM - BasePage - INFO: Element with attr is btn-group btn-block open found
+12/02/2020 06:21:58 PM - BasePage - INFO: Element with locator: #cart found
+12/02/2020 06:21:58 PM - BasePage - INFO: Element with attr is btn-group btn-block found
+12/02/2020 06:21:58 PM - BasePage - INFO: Element with locator: #cart found
+12/02/2020 06:21:58 PM - BasePage - INFO: Element with locator: {'css': '#cart'} clicked
+12/02/2020 06:21:58 PM - BasePage - INFO: Element with locator: #cart>ul.dropdown-menu found
+12/02/2020 06:22:04 PM - BasePage - INFO: Element with locator: #form-currency found
+12/02/2020 06:22:04 PM - BasePage - INFO: Element with locator: #cart-total found
+12/02/2020 06:22:04 PM - BasePage - INFO: Element with locator: #content .row .product-layout .caption .price found
+12/02/2020 06:22:06 PM - BasePage - INFO: Element with locator: #form-currency > .btn-group found
+12/02/2020 06:22:06 PM - BasePage - INFO: Element with attr is btn-group found
+12/02/2020 06:22:07 PM - BasePage - INFO: Element with locator: #form-currency found
+12/02/2020 06:22:07 PM - BasePage - INFO: Element with locator: #form-currency found
+12/02/2020 06:22:08 PM - BasePage - INFO: Element with locator: {'css': '#form-currency'} clicked
+12/02/2020 06:22:12 PM - BasePage - INFO: Elements with locator: #form-currency > div > ul.dropdown-menu found
+12/02/2020 06:22:12 PM - BasePage - INFO: Element with locator: #form-currency found
+12/02/2020 06:22:14 PM - BasePage - INFO: Element with locator: #top-links > ul > li.dropdown > a[title="My Account"] found
+12/02/2020 06:22:14 PM - BasePage - INFO: Element with locator: {'css': '#top-links > ul > li.dropdown > a[title="My Account"]'} clicked
+12/02/2020 06:22:14 PM - BasePage - INFO: Element with locator: #top-links > ul > li.dropdown.open > a found
+12/02/2020 06:22:14 PM - BasePage - INFO: Element with attr is true found
+12/02/2020 06:22:16 PM - BasePage - INFO: Element with locator: #top-links > ul > li.dropdown > a[title="My Account"] found
+12/02/2020 06:22:16 PM - BasePage - INFO: Element with locator: {'css': '#top-links > ul > li.dropdown > a[title="My Account"]'} clicked
+12/02/2020 06:22:16 PM - BasePage - INFO: Element with locator: #top-links > ul > li.dropdown.open > ul > li:nth-child(2) found
+12/02/2020 06:22:16 PM - BasePage - INFO: Element with locator: {'css': '#top-links > ul > li.dropdown.open > ul > li:nth-child(2)'} clicked
+12/02/2020 06:22:18 PM - BasePage - INFO: Input with locator: {'css': '#input-email'} found
+12/02/2020 06:22:18 PM - BasePage - INFO: Element with locator: #input-email found
+12/02/2020 06:22:22 PM - BasePage - INFO: Input with locator: {'css': '#input-password'} found
+12/02/2020 06:22:22 PM - BasePage - INFO: Element with locator: #input-password found
+12/02/2020 06:22:22 PM - BasePage - INFO: Element with locator: #content > div > div:nth-child(2) > div > form > .btn-primary found
+12/02/2020 06:22:22 PM - BasePage - INFO: Element with locator: {'css': '#content > div > div:nth-child(2) > div > form > .btn-primary'} clicked
+12/02/2020 06:23:55 PM - BasePage - INFO: Input with locator: {'css': '#input-username'} found
+12/02/2020 06:23:55 PM - BasePage - INFO: Element with locator: #input-username found
+12/02/2020 06:23:55 PM - BasePage - INFO: Input with locator: {'css': '#input-password'} found
+12/02/2020 06:23:55 PM - BasePage - INFO: Element with locator: #input-password found
+12/02/2020 06:23:55 PM - BasePage - INFO: Element with locator: form button[type="submit"] found
+12/02/2020 06:23:57 PM - BasePage - INFO: Element with locator: {'css': 'form button[type="submit"]'} clicked
+12/02/2020 06:23:57 PM - BasePage - INFO: Elements with locator: #menu >li found
+12/02/2020 06:23:58 PM - BasePage - INFO: Element with locator: a[data-original-title="Add New"] found
+12/02/2020 06:23:58 PM - BasePage - INFO: Element with locator: {'tag': 'a[data-original-title="Add New"]'} clicked
+12/02/2020 06:23:58 PM - BasePage - INFO: Input with locator: {'css': '#form-download > div:nth-child(1) > div > div > input'} found
+12/02/2020 06:23:58 PM - BasePage - INFO: Element with locator: #form-download > div:nth-child(1) > div > div > input found
+12/02/2020 06:23:58 PM - BasePage - INFO: Element with locator: #button-upload found
+12/02/2020 06:23:58 PM - BasePage - INFO: Element with locator: {'css': '#button-upload'} clicked
+12/02/2020 06:24:01 PM - BasePage - INFO: Input with locator: {'css': '#input-username'} found
+12/02/2020 06:24:01 PM - BasePage - INFO: Element with locator: #input-username found
+12/02/2020 06:24:01 PM - BasePage - INFO: Input with locator: {'css': '#input-password'} found
+12/02/2020 06:24:01 PM - BasePage - INFO: Element with locator: #input-password found
+12/02/2020 06:24:01 PM - BasePage - INFO: Element with locator: form button[type="submit"] found
+12/02/2020 06:24:02 PM - BasePage - INFO: Element with locator: {'css': 'form button[type="submit"]'} clicked
+12/02/2020 06:24:02 PM - BasePage - INFO: Elements with locator: #menu >li found
+12/02/2020 06:24:03 PM - BasePage - INFO: Element with locator: tbody > tr > td > a.btn-primary found
+12/02/2020 06:24:03 PM - BasePage - INFO: Element with locator: {'css': 'tbody > tr > td > a.btn-primary'} clicked
+12/02/2020 06:24:03 PM - BasePage - INFO: Input with locator: {'css': '#form-download > div:nth-child(1) > div > div > input'} found
+12/02/2020 06:24:03 PM - BasePage - INFO: Element with locator: #form-download > div:nth-child(1) > div > div > input found
+12/02/2020 06:24:03 PM - BasePage - INFO: Element with locator: button[data-original-title="Save"] found
+12/02/2020 06:24:03 PM - BasePage - INFO: Element with locator: {'tag': 'button[data-original-title="Save"]'} clicked
+12/02/2020 06:24:26 PM - BasePage - INFO: Input with locator: {'css': '#input-username'} found
+12/02/2020 06:24:26 PM - BasePage - INFO: Element with locator: #input-username found
+12/02/2020 06:24:27 PM - BasePage - INFO: Input with locator: {'css': '#input-password'} found
+12/02/2020 06:24:27 PM - BasePage - INFO: Element with locator: #input-password found
+12/02/2020 06:24:27 PM - BasePage - INFO: Element with locator: form button[type="submit"] found
+12/02/2020 06:24:27 PM - BasePage - INFO: Element with locator: {'css': 'form button[type="submit"]'} clicked
+12/02/2020 06:24:27 PM - BasePage - INFO: Elements with locator: #menu >li found
+12/02/2020 06:24:28 PM - BasePage - INFO: Elements with locator: #form-download > div > table > tbody > tr found
+12/02/2020 06:24:28 PM - BasePage - INFO: Elements with locator: #form-download > div > table > tbody > tr found
+12/02/2020 06:24:29 PM - BasePage - INFO: Elements with locator: #form-download > div > table > tbody > tr found
+12/02/2020 06:24:29 PM - BasePage - INFO: Element with locator: button[data-original-title="Delete"] found
+12/02/2020 06:24:29 PM - BasePage - INFO: Element with locator: {'tag': 'button[data-original-title="Delete"]'} clicked
+12/02/2020 06:24:31 PM - BasePage - INFO: Elements with locator: #form-download > div > table > tbody > tr found
+12/02/2020 07:01:31 PM - BasePage - INFO: Input with locator: {'css': '#input-username'} found
+12/02/2020 07:01:31 PM - BasePage - INFO: Element with locator: #input-username found
+12/02/2020 07:01:31 PM - BasePage - INFO: Input with locator: {'css': '#input-password'} found
+12/02/2020 07:01:31 PM - BasePage - INFO: Element with locator: #input-password found
+12/02/2020 07:01:31 PM - BasePage - INFO: Element with locator: form button[type="submit"] found
+12/02/2020 07:01:32 PM - BasePage - INFO: Element with locator: {'css': 'form button[type="submit"]'} clicked
+12/02/2020 07:01:32 PM - BasePage - INFO: Elements with locator: #menu >li found
+12/02/2020 07:01:33 PM - BasePage - INFO: Element with locator: tbody > tr > td > a.btn-primary found
+12/02/2020 07:01:33 PM - BasePage - INFO: Element with locator: {'css': 'tbody > tr > td > a.btn-primary'} clicked
+12/02/2020 07:01:33 PM - BasePage - INFO: Input with locator: {'css': '#form-download > div:nth-child(1) > div > div > input'} found
+12/02/2020 07:01:33 PM - BasePage - INFO: Element with locator: #form-download > div:nth-child(1) > div > div > input found
+12/02/2020 07:01:33 PM - BasePage - INFO: Element with locator: button[data-original-title="Save"] found
+12/02/2020 07:01:33 PM - BasePage - INFO: Element with locator: {'tag': 'button[data-original-title="Save"]'} clicked
+12/02/2020 07:16:28 PM - BasePage - INFO: Input with locator: {'css': '#input-username'} found
+12/02/2020 07:16:28 PM - BasePage - INFO: Element with locator: #input-username found
+12/02/2020 07:16:28 PM - BasePage - INFO: Input with locator: {'css': '#input-password'} found
+12/02/2020 07:16:28 PM - BasePage - INFO: Element with locator: #input-password found
+12/02/2020 07:16:28 PM - BasePage - INFO: Element with locator: form button[type="submit"] found
+12/02/2020 07:16:29 PM - BasePage - INFO: Element with locator: {'css': 'form button[type="submit"]'} clicked
+12/02/2020 07:16:29 PM - BasePage - INFO: Elements with locator: #menu >li found
+12/02/2020 07:16:30 PM - BasePage - INFO: Element with locator: tbody > tr > td > a.btn-primary found
+12/02/2020 07:16:30 PM - BasePage - INFO: Element with locator: {'css': 'tbody > tr > td > a.btn-primary'} clicked
+12/02/2020 07:16:30 PM - BasePage - INFO: Input with locator: {'css': '#form-download > div:nth-child(1) > div > div > input'} found
+12/02/2020 07:16:30 PM - BasePage - INFO: Element with locator: #form-download > div:nth-child(1) > div > div > input found
+12/02/2020 07:16:30 PM - BasePage - INFO: Element with locator: button[data-original-title="Save"] found
+12/02/2020 07:16:30 PM - BasePage - INFO: Element with locator: {'tag': 'button[data-original-title="Save"]'} clicked
+12/02/2020 07:16:31 PM - BasePage - INFO: Element with locator: #content > .container-fluid > div.alert.alert-success.alert-dismissible found

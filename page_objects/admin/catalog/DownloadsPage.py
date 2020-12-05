@@ -23,9 +23,9 @@ alert_success = {'css': '#content > .container-fluid > div.alert.alert-success.a
 
 class DownloadsPage(BasePage):
     @staticmethod
-    def _create_new_download():
+    def create_new_download():
         insert_row(
-            "INSERT INTO oc_download(download_id, filename, mask, date_added) VALUES (DEFAULT, 'NewFileName', 'MaskDB', CURRENT_TIMESTAMP())")
+            "INSERT INTO oc_download(download_id, filename, mask, date_added) VALUES (DEFAULT, 'Ясделие.jpg.123', 'MaskDB', CURRENT_TIMESTAMP())")
         new_download_id = connect(
             "SELECT download_id FROM oc_download WHERE download_id=(SELECT max(download_id) FROM oc_download)")
         new_download_id_parsed = re.findall("\\d+", str(new_download_id))
@@ -91,9 +91,11 @@ class DownloadsPage(BasePage):
         row = self.get_first_element()
         return row.find_element_by_tag_name("td.text-center > input[type=checkbox]")
 
-    def click_del_btn(self):
+    def click_delete(self):
         self._click(delete_btn)
 
+    # Для работы скрипта в папке Storage/Downloads должен лежать файл с именем добавленным при создании.
+    # Иначе не подтягивает данные.
     # def make_download_input_visible(self):
     #     self.driver.execute_script(
     #         """
@@ -113,7 +115,7 @@ class DownloadsPage(BasePage):
     # def download_file(self):
     #     dirname = os.path.dirname(__file__)
     #     print(dirname)
-    #     filename = os.path.join(dirname, "ruins.jpg")
+    #     filename = os.path.join(dirname, "Ясделие.jpg.123")
     #     input_manager = self.driver.find_element_by_css_selector('input[name="file"]')
     #     print(filename)
     #     input_manager.send_keys(filename)

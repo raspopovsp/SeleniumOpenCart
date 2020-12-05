@@ -21,7 +21,7 @@ class AuthPage(BasePage):
         return locator.alert_danger_text
 
     def goto_login_page(self):
-        self.goto(locator.login_url)
+        self._goto(locator.login_url)
 
     def login(self, username, password):
         self.goto_login_page()

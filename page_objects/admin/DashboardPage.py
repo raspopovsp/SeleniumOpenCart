@@ -20,7 +20,6 @@ menu_list_id = {
     'Report': 'menu-report'
 }
 
-
 class DashboardPage(BasePage):
 
     def _get_menu(self):
@@ -42,3 +41,15 @@ class DashboardPage(BasePage):
                 submenu_item = item
                 break
         return submenu_item
+
+    def navigate_to(self, dashboard_menu, submenu):
+        menu_item = self.get_menu_item(dashboard_menu)
+        menu_item.click()
+        catalog_id = self.driver.find_element_by_id("collapse1")
+        while True:
+            if catalog_id.get_attribute("class") != "collapse in":
+                continue
+            else:
+                break
+        submenu_item = self.get_submenu_item(menu_item, submenu)
+        submenu_item.click()
