@@ -34,15 +34,16 @@ def test_new_download(browser):
         # ActionChains(driver).move_to_element(download_name_input).click().send_keys(download_file_name).perform()
     with allure.step(f"Download file with autoIt"):
         DownloadsPage(driver).upload_btn_click()
-        """ 
-        Тудусик: уйти от autoit ибо headless не заработает.
-        С другой стороны похер, задолбал кастомный инпут и тестировать чужой JavaScript не охота. 
-        """
+
+        # TODO: уйти от autoit, потому что в headless режиме не заработает.
+        # Для добавления файла через JavaScript или базу
+        # файл с совпадающим именем должен лежать в папке Storage веб-сервера. Либо добавлять через GUI
+
         time.sleep(1)
         autoit.win_activate("Открытие")
         autoit.control_focus("Открытие", "Edit1")
         autoit.control_set_text("Открытие", "Edit1",
-                                "G:\\Projects\\SeleniumOpenCart\\page_objects\\admin\\catalog\\ruins.jpg")
+                                "G:\\Projects\\SeleniumOpenCart\\page_objects\\admin\\catalog\\test.jpg")
         time.sleep(1)
         autoit.control_click("Открытие", "Button1")
         time.sleep(1)
