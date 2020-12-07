@@ -5,7 +5,6 @@ from utilities.db_connection import connect, delete_row, insert_row
 
 download_files_table_element = {'css': 'tbody > tr > .text-left'}
 edit_btn = {'css': 'tbody > tr > td > a.btn-primary'}
-
 add_new_btn = {'tag': 'a[data-original-title="Add New"]'}
 delete_btn = {'tag': 'button[data-original-title="Delete"]'}
 save_btn = {'tag': 'button[data-original-title="Save"]'}
@@ -14,7 +13,6 @@ cancel_btn = {'tag': 'a[data-original-title="Cancel"]'}
 download_form = {'css': 'panel-body > form.form-horizontal'}
 form_inputs = {'css': '.panel-body > form.form-horizontal > .form-group'}
 upload_new_btn = {'css': '#button-upload'}
-
 download_list = {'css': '#form-download > div > table > tbody > tr'}
 
 name_input = {'css': "#form-download > div:nth-child(1) > div > div > input"}
