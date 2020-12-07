@@ -29,8 +29,6 @@ test:
   services:
     - selenium/standalone-chrome:latest
   script:
-    - export selenium_remote_url=http://selenium__standalone-chrome:4444/wd/hub/
-    - export PATH=$PATH:${SOURCE_CODE_DIRECTORY}/chromedriver.exe
     - pytest -s --alluredir=reports/allure-report
   artifacts:
     paths:
