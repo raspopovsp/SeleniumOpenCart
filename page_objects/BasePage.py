@@ -16,7 +16,6 @@ class BasePage:
         self.wait = WebDriverWait(driver, wait)
 
     """ метод для просмотра аттрибутов элемента в отладочных целях """
-
     @staticmethod
     def get_element_attributes(element):
         attrs = []
@@ -59,7 +58,7 @@ class BasePage:
         return elems
 
     def _click(self, selector, index=0):
-        # actions(self.driver).move_to_element(self.__element(selector, index)).click().perform()
+        # actions(self.driver).move_to_element(self._element(selector, index)).click().perform()
         try:
             element = self._element(selector, index)
             element.click()

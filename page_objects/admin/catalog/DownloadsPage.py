@@ -25,7 +25,7 @@ class DownloadsPage(BasePage):
     @staticmethod
     def create_new_download():
         insert_row(
-            "INSERT INTO oc_download(download_id, filename, mask, date_added) VALUES (DEFAULT, 'Ясделие.jpg.123', 'MaskDB', CURRENT_TIMESTAMP())")
+            "INSERT INTO oc_download(download_id, filename, mask, date_added) VALUES (DEFAULT, 'Yasdelie.jpg.123', 'MaskDB', CURRENT_TIMESTAMP())")
         new_download_id = connect(
             "SELECT download_id FROM oc_download WHERE download_id=(SELECT max(download_id) FROM oc_download)")
         new_download_id_parsed = re.findall("\\d+", str(new_download_id))
