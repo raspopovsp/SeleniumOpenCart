@@ -14,13 +14,17 @@ before_script:
   - source venv/bin/activate
   - pip install -r requirements.txt
 
-run:
+stages:
+  - test
+
+test:
   services:
     - selenium/standalone-chrome:latest
 
   script:
-    - pytest
+    - pytest --alluredir=reports/allure-report
 
   artifacts:
     paths:
-      - build/reports/allure
+      - /REPORTS/allure-report
+      - /REPORTS/LOGS

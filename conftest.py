@@ -24,7 +24,7 @@ def browser(request):
     else:
         raise Exception(f"{request.param} is not supported!")
 
-    driver.implicitly_wait(20)
+    driver.implicitly_wait(10)
     request.addfinalizer(driver.close)
     driver.get(request.config.getoption("--url"))
 

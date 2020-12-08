@@ -52,7 +52,7 @@ def test_cart_button_closed_by_default(browser):
         assert False
 
 
-""" При клике на кнопку "Корзина", открывается список твоаров """
+""" меню "Корзина" расхлопывается по нажатию """
 @allure.feature("cart button tests")
 @allure.story("Cart opend by default")
 def test_cart_button_opened_after_click(browser):
@@ -134,7 +134,7 @@ def test_account_btn_click(browser):
     else:
         assert False
 
-""" Тест перехода к форму авторизации """
+""" Тест перехода к форме авторизации """
 @allure.feature("user login")
 @allure.story("account/login page exists test")
 def test_navigate_to_auth_page(browser):

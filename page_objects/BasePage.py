@@ -40,7 +40,7 @@ class BasePage:
         try:
             element = self.driver.find_elements(by, selector)[index]
             self.log.info(f'Element with locator: {str(selector)} found')
-        except NoSuchElementException:
+        except (NoSuchElementException, IndexError):
             self.log.info(f'Element with {selector} not found')
         return element
 
@@ -72,6 +72,7 @@ class BasePage:
             element = self._element(selector, index)
             element.clear()
             element.send_keys(value)
+            self.log.info(f'Input {selector} filled with {value}')
         except NoSuchElementException:
             self.log.info(f'Element with {selector} not found')
 
@@ -82,6 +83,7 @@ class BasePage:
         text = None
         try:
             text = self._element(selector, index).text.strip()
+            self.log.info(f'Text {text} from {selector} captured')
         except NoSuchElementException:
             self.log.exception(f"Element {selector} not found")
         return text
@@ -90,7 +92,7 @@ class BasePage:
         elem = None
         try:
             elem = self._wait_for_visible(selector)
-            self.log.info(f"Element with attr is {elem.get_attribute(attr)} found")
-        except IndexError:
-            self.log.info(f"Element with attr is {elem.get_attribute(attr)} out of range")
+            self.log.info(f"Element with attr = {elem.get_attribute(attr)} found")
+        except NoSuchElementException:
+            self.log.info(f"Element with attr = {elem.get_attribute(attr)} not found")
         return elem.get_attribute(attr)
